@@ -1,0 +1,36 @@
+package com.example.App_api.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Map;
+
+@Document(collection = "tour")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Tour {
+    @Id
+    private String id;
+    private String title;
+    private String subTitle;
+    private List<Image> image;
+    private String describe;
+    private String interesting;
+    private String address;
+    private String inteval;
+    private String vehicle;
+    private Double price;
+    private Double sale;
+    private Boolean status;
+    private String idAccount;
+    private List<Map<String,Object>> hanhtrinh;
+    private List<String> idCategory;
+    private List<String> idService;
+    private LocalDateTime timeUpdate;
+}
