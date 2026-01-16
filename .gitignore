@@ -1,0 +1,17 @@
+# Environment variables
+.env
+*.env
+.env.*
+!.env.example
+
+# Sensitive properties
+application.properties
+
+# Build & Dependencies
+**/node_modules/
+**/target/
+**/build/
+.mvn/
+.idea/
+.vscode/
+.DS_Store
